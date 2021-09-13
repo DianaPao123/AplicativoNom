@@ -1,0 +1,441 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+TEXTAREA, INPUT[type="text"]
+	{
+		/* font size, line height, face */
+		font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1px;
+    }
+
+
+body   
+{
+	font-size: 0.8em;
+     font: 15px Avenir;
+    margin: 0em;
+    padding: 0px;
+   height:auto rem;
+    width: 100%;
+     background-color: #fff;
+    background-image: url('http://esteticabrasilbeauty.com/pt/wp-content/uploads/2013/11/1bg1.jpg');
+    background-repeat:repeat-y;
+    background-position: 50% top;
+    background-attachment: inherit;
+    /* FF 3.6+ */  
+    /* IE10 */  
+    /* Safari 4+, Chrome 2+ */  
+    /* Safari 5.1+, Chrome 10+ */  
+    /* Opera 11.10 */  
+    filter: progid:DXImageTransform.Microsoft.gradient; /* IE6 & IE7 */  
+   /* IE8+ */  
+    text-align: left;
+}
+
+a:link, a:visited
+{
+	color: #006bb8;
+    text-align: justify;
+}
+
+a:hover
+{
+	color: #666666;
+	text-decoration: none;
+}
+
+a:active
+{
+	color: #006bb8;
+}
+
+p
+{
+	margin-bottom: 10px;
+		line-height: 1.6em;
+height:auto rem;
+	width: 100%;
+}
+
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+	font-size: 1.5em;
+	color: #666666;
+	font-variant: small-caps;
+	text-transform: none;
+	font-weight: 200;
+	margin-bottom: 0px;
+    height:100% rem;
+	width: 100%;
+}
+
+h1
+{
+	font-size: 1.2em;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+    text-align: center;
+    margin-left: 0px;
+    height:100% rem;
+	width: 100%;
+}
+
+h2
+{
+	font-size: 3.5em;
+	font-weight: 600;
+	height:100% rem;
+	width: 100%;
+}
+
+h3
+{
+	font-size: 1.2em;
+	font-weight: 600;
+	height:100% rem;
+	width: 166%
+}
+
+h4
+{
+	font-size: 1.1em;
+}
+
+h5, h6
+{
+	font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+	margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+	border-style: none;
+	background-position:left;
+    border-color: inherit;
+    border-width: medium;
+    width:90%;/* for ie 8 */
+	background-color:transparent;
+	margin: 3px auto 0px auto;
+	border-radius: 15px;
+ box-shadow: 2px 3px 2px 5px rgba(0,0,0,0.35);
+
+}
+.page1
+{
+   border-style:solid;
+        border:1px;
+        border-width: 1px;
+        border-radius: 15px ;
+        padding: 2px 4px;
+        height:40%rem;
+        width:60%;
+        color: #000101;
+        background-color:transparent;
+        background-color: #A8CF38;
+        text-align: center;
+}
+
+.floor
+{
+	background-image: url('../images/top_franja.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.header
+{
+		background-position: left;
+		margin: 0em auto;
+	padding: 0px;
+width:96%;
+	height:5% rem;
+	background-color:transparent;
+}
+
+.header h1
+{
+	position: inherit;
+	width: 100%;
+	height:90% rem;
+  color: #A8CF;
+border-radius: 15px;
+    top: 3px;
+    left: -36px;
+    margin-left: 0px;
+}
+
+.main
+{
+	padding: 0px 12px;
+	margin: 12px 8px 8px 8px;
+	min-height: 420px;
+}
+
+.leftCol
+{
+	padding: 6px 0px;
+	margin: 12px 8px 8px 8px;
+	width: 200px;
+	min-height: 200px;
+}
+
+.footer
+{
+	color: #666666;
+	padding: 8px 0px 0px 0px;
+	margin: 0px auto;
+	text-align: center;
+	line-height: normal;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 95%;
+    border: 0px solid #ddd;
+    height: 41px;
+}
+
+th, td {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #E8E7E7}
+
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+background-color:#E8E9EA;
+	width:92%;/* for ie 8 */
+ height:auto rem;
+	border-radius: 15px;
+	font-size: 1.0em;
+	position:  relative
+
+}
+
+div.menu
+{
+	background-color: transparent;
+	float: none;
+	position: inherit;
+    top: 0px;
+    left: 0px;
+}
+
+div.menu ul
+{
+ list-style: none;
+	margin: px;
+	padding: 0px;
+	width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+	background-image:url("../images/bub.png");
+     padding-right:25%;
+      background-position: right center;
+    background-repeat:no-repeat;
+    overflow:visible;
+    padding-right:0;
+	display: inherit;
+	background-color: #FEFEFE;   /*color fondo caja menu*/
+	border: 2px solid #A8CF38;
+	border-radius: 15px;
+	color:#3E3E3D;        /*letra de menu*/
+	display: list-item;
+	line-height: 1.45em;    /* separacion entre menu*/
+	padding: 4px 20px;
+	text-decoration: none;
+	white-space: nowrap;
+    border-radius: 15px;
+}
+
+div.menu ul li a:hover
+{
+	background-color: #006bb8;
+	color: #fffefe;
+	text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+	background-color: #666666;
+	color: #99CC00;
+	text-decoration: none;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+	margin: 1em 0px;
+	padding: 1em;
+	border: 1px solid #99CC00;
+}
+
+fieldset p 
+{
+	margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+	display: block;
+}
+
+fieldset label.inline 
+{
+	display: inline;
+}
+
+legend 
+{
+	font-size: 1.1em;
+	font-weight: 600;
+	padding: 2px 4px 8px 4px;
+}
+
+input.textEntry 
+{
+	width: 320px;
+	border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+	width: 320px;
+	border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+	width: 42%;
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+	margin: 1em 0px;
+	padding: 1em;
+	border: 1px solid #99CC00;
+}
+
+fieldset p 
+{
+	margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+	display: block;
+}
+
+fieldset label.inline 
+{
+	display: inline;
+}
+
+legend 
+{
+	font-size: 1.1em;
+	font-weight: 600;
+	padding: 2px 4px 8px 4px;
+}
+
+input.textEntry 
+{
+	width: 320px;
+	border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+	width: 320px;
+	border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+	width: 42%;
+}
+
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+	clear: both;
+}
+
+.title
+{
+	display: block;
+	float: left;
+	text-align: left;
+	width: auto;
+}
+
+.loginDisplay
+{
+	font-size: 1.1em;
+	display: block;
+	text-align: right;
+	padding: 10px;
+	color: White;
+}
+
+.loginDisplay a:link
+{
+	color: white;
+}
+
+.loginDisplay a:visited
+{
+	color: white;
+}
+
+.loginDisplay a:hover
+{
+	color: white;
+}
+
+.failureNotification
+{
+	font-size: 1.2em;
+	color: Red;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+.submitButton
+{
+	text-align: right;
+	padding-right: 10px;
+}

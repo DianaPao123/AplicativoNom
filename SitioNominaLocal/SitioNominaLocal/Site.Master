@@ -1,0 +1,87 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="GafLookPaid.SiteMaster" %>
+
+<%@ Register TagPrefix="asp" Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        .auto-style1 {
+            text-align: right;
+        }
+    </style>
+
+</head>
+<body>
+    <div align="center">
+
+        <img alt="NTLink" src="images/franja_nomina.png" style="width: 1040px" />
+
+    </div>
+    <form runat="server" enctype="multipart/form-data">
+        <asp:ScriptManager AsyncPostBackTimeout="120" runat="server" ID="smGlobal" EnablePartialRendering="True" EnableScriptGlobalization = 'True' EnableScriptLocalization='True' />
+        <div class="page">
+            <div>
+                <div style="height: 46px; background-image: url('images/top_franja_nomina.png'); background-size: 100%;">
+                    <table style="height: 100%; text-align: right; width: 100%;">
+                        <tr>
+                            <td style="width: 90%" class="auto-style1">Usuario:
+                                <asp:Label runat="server" ID="lblNombreUsuario" Font-Size="10pt" />
+                                &nbsp;&nbsp;
+			<br />
+                                Empresa:
+                                <asp:Label runat="server" ID="lblEmpresa" Font-Size="10pt" />
+                                &nbsp;&nbsp;
+
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+                <div class="clear hideSkiplink">
+                    <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu"
+                        EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal"
+                        OnMenuItemClick="NavigationMenu_MenuItemClick">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Inicio" />
+                            <asp:MenuItem Text="Empresas" NavigateUrl="~/wfrEmpresasConsulta.aspx">
+                                <asp:MenuItem NavigateUrl="~/wfrEmpresasConsulta.aspx" Text="Empresas"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem runat="server" Text="Catálogo de Empleados" NavigateUrl="WfrColaboradoresConsulta.aspx"></asp:MenuItem>
+                            <asp:MenuItem runat="server" Value="Crear Nuevo Recibo" NavigateUrl="WfrNomina.aspx"></asp:MenuItem>
+                            <asp:MenuItem runat="server" Value="Consultar Recibos" NavigateUrl="wfrConsultaNomina.aspx"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/wfrUsuariosConsulta.aspx" Text="Usuarios" />
+
+                            <asp:MenuItem Text="Cerrar Sesión" NavigateUrl="~/LogOut.aspx" />
+                        </Items>
+                    </asp:Menu>
+                </div>
+            </div>
+            <div class="clear main">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+            <div class="clear">
+            </div>
+        </div>
+    </form>
+    <div align="center">
+        <table>
+            <tr>
+                <td height="5" colspan="5">
+                    <img src="images/franja.png" alt="" width="256" height="22" />
+                    <img alt="" src="images/franja.png" width="256" height="22" /><img src="images/franja.png" alt="" width="256" height="22" />
+                </td>
+
+            </tr>
+        </table>
+    </div>
+    <br />
+
+
+</body>
+</html>

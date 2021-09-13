@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="SitioNominaAdmin.Default" %>
+<%@ Register TagPrefix="asp" Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+	<title></title>
+	<link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+	<asp:ContentPlaceHolder ID="HeadContent" runat="server">
+	</asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            color: #808080;
+        }
+    </style>
+</head>
+<body>
+	<form id="Form1" runat="server">
+		<asp:ScriptManager  runat="server" ID="smGlobal" />
+		<div align="center"><img alt="NTLink" src="images/franja_nomina.png"  />  </div>
+	<div class="page">
+		<div class="header">
+			<div class="title">
+				<h1>
+					<span class="auto-style1">Administracion Ntlink NÓMINA</span> </h1>
+			</div>
+         			<div class="loginDisplay">
+				<asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+					<AnonymousTemplate>
+                         Bienvenido <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>
+						[ <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect" LogoutText="Cerrar Sesion" LogoutPageUrl="~/wfrLogin.aspx"/> ]
+                       <%--[ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server"><span class="auto-style1">Iniciar Sesión</span></a> ]--%>
+					</AnonymousTemplate>
+					<LoggedInTemplate>
+						Bienvenido <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>
+						[ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Cerrar Sesion" LogoutPageUrl="~/"/> ]
+					</LoggedInTemplate>
+				</asp:LoginView>
+			</div>
+			<div class="clear hideSkiplink">
+				<asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+					<Items>
+						<asp:MenuItem Text="Clientes" >
+							<asp:MenuItem NavigateUrl="~/wfrClientes.aspx" Text="Nuevo Cliente" />
+							<asp:MenuItem NavigateUrl="~/wfrClientesConsulta.aspx" Text="Lista de clientes" />
+							<%--<asp:MenuItem NavigateUrl="~/wfrEmpresasConsulta.aspx" Text="Lista de Empresas" />--%>
+						</asp:MenuItem>
+						<asp:MenuItem Text="Usuarios" >
+							<asp:MenuItem NavigateUrl="wfrUsuariosLista.aspx" Text="Lista de Usuarios" />
+						</asp:MenuItem>
+					</Items>
+				</asp:Menu>
+			</div>
+		</div>
+        </br> 
+        </br></br>
+		<div class="main">
+			<asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+		</div>
+		<div class="clear">
+		</div>
+	</div>
+	<div class="footer">
+		Nt Link Comunicaciones
+	</div>
+	</form>
+	<div align="center">
+	<table>
+		<tr>
+			
+ <td height="5" colspan="5"><img src="images/franja.png" alt="" width="256" height="22" /><img alt="" src="images/franja.png" width="256" height="22" /><img src="images/franja.png" alt="" width="256" height="22" /></td>
+ 
+		</tr>
+ </table>
+ </div>
+</body>
+</html>
+

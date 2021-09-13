@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SitioNominaAdmin.SiteMaster" %>
+<%@ Register TagPrefix="asp" Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+	<title></title>
+	<link href="~/Styles/SiteLogin.css" rel="stylesheet" type="text/css" />
+	<asp:ContentPlaceHolder ID="HeadContent" runat="server">
+	</asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            color: #FFFFFF;
+        }
+        .auto-style2 {
+            color: #A8CF38;
+        }
+        .auto-style3 {
+            color: #C0C0C0;
+        }
+    </style>
+</head>
+<body>
+<div align="center">
+	<table>
+	<tr>
+        <td >
+            <img alt="NTLink" src="images/franja_nomina.png" style="height: 119px; width: 1237px"  />
+        </td>  
+   </tr>
+   </table>
+   </div>
+	<form id="Form1" runat="server">
+	<asp:ScriptManager  runat="server" ID="smGlobal" />
+	<div class="page">
+		<div class="header">
+			<div class="title">
+				<h1 class="auto-style1">
+					<span class="auto-style3">Administración</span> <span class="auto-style2">NÓMINA </span> </h1>
+			</div>
+			<div class="clear hideSkiplink">
+				
+			</div>
+		</div>
+		<div class="main">
+			<asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+		</div>
+		<div class="clear">
+		</div>
+	</div>
+        </br> </br>
+	<div class="footer">
+		NTLink Comunicaciones.
+	</div>
+	</form>
+	<div align="center">
+	
+ </div>
+<br />
+
+</body>
+</html>

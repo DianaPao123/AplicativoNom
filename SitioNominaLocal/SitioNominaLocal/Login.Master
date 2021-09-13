@@ -1,0 +1,200 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Login.master.cs" Inherits="GafLookPaid.Login" %>
+<%@ Register TagPrefix="asp" Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+	<title></title>
+	<link href="~/Styles/SiteLogin.css" rel="stylesheet" type="text/css" />
+	<asp:ContentPlaceHolder ID="HeadContent" runat="server">
+	</asp:ContentPlaceHolder>
+	
+
+    <style type="text/css">
+        .auto-style1 {
+            padding: 8px 0px 0px 0px;
+            margin: 0px auto;
+            text-align: center;
+            line-height: normal;
+        }
+        .auto-style2 {
+            text-align: center;
+        }
+        .auto-style3 {
+            height: 33px;
+            width: 923px;
+            text-align: center;
+        }
+        .auto-style5 {
+            color: #0000CC;
+            text-decoration: none;
+            font-size: medium;
+        }
+        .auto-style7 {
+            width: 130%;
+        }
+        .auto-style9 {
+            color: #666666;
+            text-decoration: none;
+            font-size: medium;
+        }
+        .auto-style10 {
+            color: #666666;
+            text-decoration: none;
+            font-size: medium;
+            font-style: italic;
+        }
+    </style>
+	<!--SCRIPTS--> 
+<div id='ventana-flotante'>
+
+   <a class='cerrar' href='javascript:void(0);' onclick='document.getElementById(&apos;ventana-flotante&apos;).className = &apos;oculto&apos;'>x</a>
+
+   <div id='contenedor'>
+
+       <div class='contenido'>
+
+¡Si eres patrón, esta información es para ti! &nbsp; 
+<a target="_blank" href="http://sat.gob.mx/nominadigital/Paginas/default.htm">Actualízate Nómina Digital </a>
+
+       </div>
+
+   </div>
+
+</div>
+
+<style>
+#ventana-flotante {
+width: 450px;  /* Ancho de la ventana */
+height: 135px;  /* Alto de la ventana */
+background: #A8CF38;  /* Color de fondo */
+position: fixed;
+border-radius: 15px;
+top: 200px;
+left: 46%;
+margin-left: -180px;
+border: 1px solid #A6A6A6;  /* Borde de la ventana */
+box-shadow: 0 5px 25px rgba(0,0,0,.1);  /* Sombra */
+z-index:999;
+}
+#ventana-flotante #contenedor {
+padding: 25px 10px 10px 10px;
+}
+#ventana-flotante .cerrar {
+float: right;
+border-bottom: 1px solid #bbb;
+border-left: 1px solid #bbb;
+color: #999;
+background: white;
+line-height: 17px;
+text-decoration: none;
+padding: 0px 14px;
+font-family: Arial;
+border-radius: 0 0 0 5px;
+box-shadow: -1px 1px white;
+font-size: 18px;
+-webkit-transition: .3s;
+-moz-transition: .3s;
+-o-transition: .3s;
+-ms-transition: .3s;
+}
+#ventana-flotante .cerrar:hover {
+background: #ff6868;
+color: white;
+text-decoration: none;
+text-shadow: -1px -1px red;
+border-bottom: 1px solid red;
+border-left: 1px solid red;
+}
+#ventana-flotante #contenedor .contenido {
+padding: 15px;
+box-shadow: inset 1px 1px white;
+background: #E4E5E3;  /* Fondo del mensaje */
+border: 1px solid #A8CF38;  /* Borde del mensaje */
+font-size: 25px;  /* Tamaño del texto del mensaje */
+color: #555;  /* Color del texto del mensaje */
+text-shadow: 1px 1px white;
+margin: 0 auto;
+border-radius: 4px;
+}
+.oculto {-webkit-transition:1s;-moz-transition:1s;-o-transition:1s;-ms-transition:1s;opacity:0;-ms-opacity:0;-moz-opacity:0;visibility:hidden;}
+    .auto-style2 {
+        text-align: center;
+    }
+</style>
+
+
+	<!-- SLIDER SETTINGS-->
+
+</head>
+<body>
+	<form id="Form1" runat="server">
+<div align="center">
+	<table>
+	<tr>
+   <td align="center" style="text-align: right" class="auto-style7" >
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<asp:HyperLink ID="HyperLink4" runat="server"    
+                    ImageUrl="images/login.png" 
+                    NavigateUrl="http://ntlink.com.mx/" style="text-align: center">HyperLink</asp:HyperLink>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+      <asp:HyperLink ID="HyperLink6" runat="server" 
+                    ImageUrl="images/Sat.png" 
+                    NavigateUrl="" style="text-align: right">HyperLink</asp:HyperLink>&nbsp; </td>
+   
+   </tr>
+        </br>
+   </table>
+   </div>
+        </br>
+           <table align="left" style="width: 100%">
+		<tr>	
+         
+ <td colspan="5" class="auto-style2"> <sup style="text-align: center"><i> 
+     <span 
+         class="style6">&nbsp;<asp:HyperLink NavigateUrl="http://ntlink2.com.mx/soporte/"  ID="HyperLink7" runat="server" style="font-size: medium; text-align: left;" 
+         CssClass="auto-style9"  >Soporte Sabados Tel:044-55 48 01 79 21</asp:HyperLink>&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+     <asp:HyperLink NavigateUrl="http://ntlink.com.mx/helpdesk/index.php?a=add" 
+         ID="HyperLink5" runat="server" style="font-size: medium; text-align: center;" 
+         CssClass="auto-style9"  >Ticket de Soporte</asp:HyperLink></span><span class="auto-style5">
+     <span class="style7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span><sup><span 
+         class="style5"><asp:HyperLink  NavigateUrl="http://ntlink2.com.mx/contacto/" ID="HyperLink8" runat="server" 
+         style="font-size: medium; text-align: center;" CssClass="auto-style9">Déjanos un Mensaje</asp:HyperLink>
+     </span></sup> </span> 
+     </i><span >&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+     </span>  
+     <asp:HyperLink NavigateUrl="http://ntlink2.com.mx/soporte/" ID="HyperLink9" 
+         runat="server" style="font-size: medium; text-align: center; " CssClass="auto-style10"  >Consulta nuestros horarios de servicio </asp:HyperLink></sup><br />&nbsp;</td>
+         		</tr>
+ </table>
+	<asp:ScriptManager  runat="server" ID="smGlobal" EnableScriptGlobalization="True" />
+	<div class="page">
+		<div class="header">
+			<div class="clear hideSkiplink">
+			</div>
+		</div>
+		<div class="main">
+			<asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+		</div>
+			</div>
+        <br/><br/>
+        <br/></br>
+	    <div class="auto-style2">
+        &nbsp;
+        </div>
+	<div align="center">
+	<table>
+		<tr>			
+ <td colspan="5" class="auto-style3"> </span>  
+     </sup></i></b><br /><img src="images/franja.png" alt="" width="256" height="22" />  <img src="images/franja.png" alt="" width="256" height="22"  /><img src="images/franja.png" alt="" width="256" height="22"  /></td>
+ 
+		</tr>
+ </table>
+        <div class="auto-style1">
+		NTLink Comunicaciones.
+	</div>
+ </div>
+	</form>
+<br />
+
+</body>
+</html>

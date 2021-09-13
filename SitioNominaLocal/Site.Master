@@ -1,0 +1,162 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="GafLookPaid.SiteMaster" %>
+
+<%@ Register TagPrefix="asp" Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit" %>
+<%--<! DOCTYPE html PUBLIC "- // W3C // DTD XHTML 1.0 Transitional // EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">--%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en" xmlns = "http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NTLINK Facturación Electrónica</title>
+    
+
+     <link rel="stylesheet" href="Content/bootstrapcdnv3-4-0-bootstrap.min.css" />
+    <script src="Scripts/v3-3-3-1-jquery.min.js"></script>
+    <script src="Scripts/bootstrapcdn-v3-4-0-bootstrap.min.js"></script>
+     <link rel="stylesheet" href="Content/font-awesome.css"/>
+        
+  
+<%--   <link rel="stylesheet" href="Content/Site.css">--%>
+
+    <link href="Imagen/processed.ico" rel="shortcut icon" type="image/x-icon" />
+
+    
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+      <script type="text/javascript">
+
+          function reloj() {
+           //    var tiempoServer = new Date(document.getElementById("hfTiempo").value);
+
+              var tiempoServer = new Date();
+              var cad1 = tiempoServer.getHours() + ":" + tiempoServer.getMinutes() + ":" + tiempoServer.getSeconds();
+              document.getElementById("tiempoCliente").innerHTML = cad1;
+              setInterval(function () {
+                  tiempoServer.setSeconds(tiempoServer.getSeconds() + 2);
+                  var cad = tiempoServer.getHours() + ":" + tiempoServer.getMinutes() + ":" + tiempoServer.getSeconds();
+                  document.getElementById("tiempoCliente").innerHTML = cad;
+              }, 1000);
+          }
+
+          window.onload = reloj;
+
+   </script>
+    
+</head>
+<body >
+
+
+     
+    <form runat="server">
+
+           <asp:ScriptManager AsyncPostBackTimeout="120" runat="server" ID="smGlobal" EnablePartialRendering="True" EnableScriptGlobalization = 'True' EnableScriptLocalization='True' />
+     
+<%--           <asp:ToolkitScriptManager AsyncPostBackTimeout="0" runat="server" ID="ToolkitScriptManager1" EnableScriptGlobalization="true"
+        EnablePartialRendering="True" />--%>
+     
+       <div class="container-fluid">
+ <div class="navbar-fixed-top " >   
+     <div class = "row"  >
+       <img src="images/franja_nomina.png" class="img-thumbnail" style="width: 100%;  max-height:70px;">
+      </div>  
+     <asp:UpdatePanel runat="server" ID="updateSaldos" UpdateMode="Conditional">
+                    <ContentTemplate>
+
+           
+     <div class = "row" style=" background-color: rgba(120, 137, 36, 0.6); min-height:30px; " >
+          
+                    
+               <div class = "col-lg-1 col-md-1 col-sm-1">
+                  <div ID="tiempoCliente"  style ="color:white; font-weight: bold;font-size:20px;"></div>
+                  <asp:HiddenField ID="hfTiempo" runat="server" ClientIDMode="Static" />
+               </div>
+         <div class = "col-lg-6 col-md-6 col-sm-1">
+             </div>
+                <asp:Label runat="server" ForeColor="White" ID="lblNombreUsuario"  class="control-label" Visible="false"/>
+
+                     <%-- </a>--%>
+                 <%--</div>--%>
+               <div class = "col-lg-4 col-md-4 col-sm-4" style ="font-size:12px;">
+                    <a style="color:white"><span class="glyphicon glyphicon-user"></span>
+                        <asp:Label runat="server" ForeColor="White" ID="lblEmpresa"  class="control-label"/></a>
+               
+    
+               </div>            
+               <div class = "col-lg-1 col-md-1 col-sm-1">
+
+                        <a style="color:white" href="LogOut.aspx"><span class="glyphicon glyphicon-log-in"> Salir</span> 
+                           
+                        </a>
+               </div>              
+                  
+     </div>
+           </ContentTemplate>
+            </asp:UpdatePanel>
+      <div class = "row">
+      <nav class="navbar navbar-default mb-0 p-0" role="navigation" style="background-color: #c1cf65;margin-bottom:-10px;    width: 100%; ">
+         <div class="navbar-header">
+                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                       <span class="sr-only">Toggle navigation</span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                       <span class="icon-bar"></span>
+                   </button>
+                  
+               </div>
+               <div id="navbar" class="navbar-collapse collapse" >
+                  
+                 <asp:Menu ID="NavigationMenu" runat="server" EnableViewState="false"
+                    IncludeStyleBlock="false" Orientation="Horizontal"
+                    CssClass="navbar-nav"
+                    StaticMenuStyle-CssClass="nav"
+                    StaticSelectedStyle-CssClass="active"
+                    DynamicMenuStyle-CssClass="dropdown-menu">
+                    <Items>
+                         
+                          <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Inicio" />
+                            <asp:MenuItem NavigateUrl="~/wfrEmpresasConsulta.aspx" Text="Empresas"></asp:MenuItem>
+                            <asp:MenuItem runat="server" Text="Catálogo de Empleados" NavigateUrl="WfrColaboradoresConsulta.aspx"></asp:MenuItem>
+                            <asp:MenuItem runat="server" Value="Crear Nuevo Recibo" NavigateUrl="WfrNomina.aspx"></asp:MenuItem>
+                            <asp:MenuItem runat="server" Value="Consultar Recibos" NavigateUrl="wfrConsultaNomina.aspx"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/wfrUsuariosConsulta.aspx" Text="Usuarios" />
+ </Items>
+
+
+                </asp:Menu>
+                   <div class="navbar-right"  style="background-color:aliceblue">
+                   </div>
+               </div>
+</nav>
+      </div>      
+    </div>
+
+   </div>
+    
+        <div class="page-header">
+           <div class="clearfix">
+               <div class="col-md-12">
+                   <div class="col-md-8 col-sm-6 col-xs-12">
+                     <h1>.<br /><small>.</small></h1>
+                   </div>
+               </div>
+           </div>
+       </div>
+             
+        <div class="container body-content" >
+            <br />
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+
+            </asp:ContentPlaceHolder>
+            <br />
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - Ntlink 2.0</p>
+            </footer>
+        </div>
+        
+                 
+
+    </form>
+</body>
+</html>

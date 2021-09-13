@@ -1,0 +1,25 @@
+﻿1>------ Operación Recompilar todo iniciada: proyecto: ServicioLocalContract, configuración: Debug Any CPU ------
+1>  Restaurando paquetes NuGet.  
+1>  Para impedir que NuGet descargue paquetes durante la compilación, abra el cuadro de diálogo Opciones de Visual Studio, haga clic en el nodo del Administrador de paquetes y desactive 'Allow NuGet to download missing packages'. 
+1>  Ya se han instalado todos los paquetes mostrados en 'packages.config'.
+1>C:\rgv\produccion\SitioFacturacion\NtLinkNomina\ServicioLocalContract\OpenSslKey.cs(45,30,45,32): warning CS0168: La variable 'ex' se ha declarado pero nunca se utiliza
+1>  ServicioLocalContract -> C:\rgv\produccion\SitioFacturacion\NtLinkNomina\ServicioLocalContract\bin\Debug\ServicioLocalContract.dll
+2>------ Operación Recompilar todo iniciada: proyecto: SitioNominaLocal, configuración: Debug Any CPU ------
+2>  Restaurando paquetes NuGet.  
+2>  Para impedir que NuGet descargue paquetes durante la compilación, abra el cuadro de diálogo Opciones de Visual Studio, haga clic en el nodo del Administrador de paquetes y desactive 'Allow NuGet to download missing packages'. 
+2>  Ya se han instalado todos los paquetes mostrados en 'packages.config'.
+2>  No existe ningún medio para resolver el conflicto entre "Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" y "Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed". Se elegirá "Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" de manera arbitraria.
+2>  Para resolver el conflicto y eliminar la advertencia, reasigne app.config del ensamblado "Newtonsoft.Json, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" de la versión "4.5.0.0" [C:\rgv\produccion\SitioFacturacion\NtLinkNomina\SitioNominaLocal\bin\Newtonsoft.Json.dll] a la versión "6.0.0.0" [].
+2>C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets(1635,5): warning MSB3247: Se encontraron conflictos entre diferentes versiones del mismo ensamblado dependiente. En Visual Studio, haga doble clic en esta advertencia (o selecciónela y presione Intro) para resolver los conflictos; de lo contrario, agregue las siguientes redirecciones de enlace al nodo "runtime" en el archivo de configuración de la aplicación: <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1"><dependentAssembly><assemblyIdentity name="Newtonsoft.Json" culture="neutral" publicKeyToken="30ad4fe6b2a6aeed" /><bindingRedirect oldVersion="0.0.0.0-6.0.0.0" newVersion="6.0.0.0" /></dependentAssembly></assemblyBinding>
+2>C:\rgv\produccion\SitioFacturacion\NtLinkNomina\SitioNominaLocal\WfrColaboradoresConsulta.aspx.cs(64,34,64,36): warning CS0168: La variable 'ee' se ha declarado pero nunca se utiliza
+2>C:\rgv\produccion\SitioFacturacion\NtLinkNomina\SitioNominaLocal\wfrConsultaNomina.aspx.cs(132,34,132,36): warning CS0168: La variable 'fe' se ha declarado pero nunca se utiliza
+2>C:\rgv\produccion\SitioFacturacion\NtLinkNomina\SitioNominaLocal\wfrConsultaNomina.aspx.cs(164,34,164,36): warning CS0168: La variable 'fe' se ha declarado pero nunca se utiliza
+2>C:\rgv\produccion\SitioFacturacion\NtLinkNomina\SitioNominaLocal\wfrEditaCentro.aspx.cs(24,29,24,36): warning CS0168: La variable 'empresa' se ha declarado pero nunca se utiliza
+2>C:\rgv\produccion\SitioFacturacion\NtLinkNomina\SitioNominaLocal\wfrFacturasConsulta.aspx.cs(130,34,130,36): warning CS0168: La variable 'fe' se ha declarado pero nunca se utiliza
+2>C:\rgv\produccion\SitioFacturacion\NtLinkNomina\SitioNominaLocal\wfrFacturasConsulta.aspx.cs(162,34,162,36): warning CS0168: La variable 'fe' se ha declarado pero nunca se utiliza
+2>C:\rgv\produccion\SitioFacturacion\NtLinkNomina\SitioNominaLocal\WfrNomina.aspx.cs(700,21,700,35): warning CS0219: La variable 'tipoPercepcion' está asignada, pero su valor nunca se utiliza
+2>C:\rgv\produccion\SitioFacturacion\NtLinkNomina\SitioNominaLocal\wfrUsuarios.aspx.cs(58,30,58,32): warning CS0168: La variable 'ee' se ha declarado pero nunca se utiliza
+2>C:\rgv\produccion\SitioFacturacion\NtLinkNomina\SitioNominaLocal\wrfTimbrado.aspx.cs(124,34,124,36): warning CS0168: La variable 'fe' se ha declarado pero nunca se utiliza
+2>C:\rgv\produccion\SitioFacturacion\NtLinkNomina\SitioNominaLocal\wrfTimbrado.aspx.cs(156,34,156,36): warning CS0168: La variable 'fe' se ha declarado pero nunca se utiliza
+2>  SitioNominaLocal -> C:\rgv\produccion\SitioFacturacion\NtLinkNomina\SitioNominaLocal\bin\SitioNominaLocal.dll
+========== Recompilar todo: 2 correctos, 0 incorrectos, 0 omitidos ==========

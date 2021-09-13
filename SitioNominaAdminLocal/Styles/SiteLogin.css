@@ -1,0 +1,68 @@
+﻿/* Login
+----------------------------------------------------------*/
+
+body   
+{
+	font-size: 0.9em;
+     font: 15px Avenir;
+    margin: 0em;
+    padding: 0px;
+   height:80% rem;
+    width: 100%;
+    background-color: #010101;
+    background-image: url('http://il5.picdn.net/shutterstock/videos/17388040/thumb/11.jpg');
+    background-repeat:no-repeat;
+     background-position: 70%  top;
+    background-attachment: inherit;
+  }
+.login {
+    margin:200em 300 0 -200em;
+    top: 46%;
+    left: 46%;
+    position: inherit;
+    width: 100%;
+    * height:auto rem;
+    *margin: -225em 0 0 -200em;
+     border-radius: 50px 20px 50px;
+  box-shadow: 5px 5px 5px 0px rgba(12,0,8,0.35);
+      }
+
+.logo {
+    text-align: center;
+     padding:1em;
+    height:122px;
+    width:37%;
+    
+}
+
+h2
+{
+    font-size: 1.5em;
+    color: #A8CF38;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    background-position:center;
+}
+
+
+.footer
+{
+	color: #FFFFFF;
+	padding: 8px 0px 0px 0px;
+	margin: 0px auto;
+	text-align: center;
+	line-height: normal;
+}
+
+/*----------------------------------------------- fin login----------------------------------------------------------*/
+
+
+
+
+
+
+
+

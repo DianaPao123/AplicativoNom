@@ -1,0 +1,31 @@
+﻿1>------ Operación Compilar iniciada: proyecto: ClienteNtLink, configuración: Debug Any CPU ------
+2>------ Operación Compilar iniciada: proyecto: ServicioLocalContract, configuración: Debug Any CPU ------
+1>  Restaurando paquetes NuGet.  
+1>  Para impedir que NuGet descargue paquetes durante la compilación, abra el cuadro de diálogo Opciones de Visual Studio, haga clic en el nodo del Administrador de paquetes y desactive 'Allow NuGet to download missing packages'. 
+1>  Ya se han instalado todos los paquetes mostrados en 'packages.config'.
+1>  ClienteNtLink -> E:\carlos\NtLinkNomina-V1.2_3.3\ClienteNtLink\bin\Debug\ClienteNtLink.dll
+3>------ Operación Compilar iniciada: proyecto: ConsoleApplication1, configuración: Debug Any CPU ------
+2>  Restaurando paquetes NuGet.  
+2>  Para impedir que NuGet descargue paquetes durante la compilación, abra el cuadro de diálogo Opciones de Visual Studio, haga clic en el nodo del Administrador de paquetes y desactive 'Allow NuGet to download missing packages'. 
+2>  Ya se han instalado todos los paquetes mostrados en 'packages.config'.
+2>  ServicioLocalContract -> E:\carlos\NtLinkNomina-V1.2_3.3\ServicioLocalContract\bin\Debug\ServicioLocalContract.dll
+3>  Restaurando paquetes NuGet.  
+3>  Para impedir que NuGet descargue paquetes durante la compilación, abra el cuadro de diálogo Opciones de Visual Studio, haga clic en el nodo del Administrador de paquetes y desactive 'Allow NuGet to download missing packages'. 
+3>  Ya se han instalado todos los paquetes mostrados en 'packages.config'.
+3>C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v12.0\Fakes\Microsoft.QualityTools.Testing.Fakes.targets(128,5): warning : no se pudo resolver el ensamblado Microsoft.WindowsAzure.ServiceRuntime a partir de las referencias
+3>  ConsoleApplication1 -> E:\carlos\NtLinkNomina-V1.2_3.3\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+4>------ Operación Compilar iniciada: proyecto: ServicioWebNomina, configuración: Debug Any CPU ------
+5>------ Operación Compilar iniciada: proyecto: SitioNominaLocal, configuración: Debug Any CPU ------
+4>  Restaurando paquetes NuGet.  
+4>  Para impedir que NuGet descargue paquetes durante la compilación, abra el cuadro de diálogo Opciones de Visual Studio, haga clic en el nodo del Administrador de paquetes y desactive 'Allow NuGet to download missing packages'. 
+4>  Ya se han instalado todos los paquetes mostrados en 'packages.config'.
+4>  ServicioWebNomina -> E:\carlos\NtLinkNomina-V1.2_3.3\WcfService1\bin\ServicioWebNomina.dll
+5>  Restaurando paquetes NuGet.  
+5>  Para impedir que NuGet descargue paquetes durante la compilación, abra el cuadro de diálogo Opciones de Visual Studio, haga clic en el nodo del Administrador de paquetes y desactive 'Allow NuGet to download missing packages'. 
+5>  Ya se han instalado todos los paquetes mostrados en 'packages.config'.
+5>  No existe ningún medio para resolver el conflicto entre "Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" y "Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed". Se elegirá "Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" de manera arbitraria.
+5>  Para resolver el conflicto y eliminar la advertencia, reasigne app.config del ensamblado "Newtonsoft.Json, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed" de la versión "4.5.0.0" [E:\carlos\NtLinkNomina-V1.2_3.3\SitioNominaLocal\bin\Newtonsoft.Json.dll] a la versión "6.0.0.0" [].
+5>C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets(1635,5): warning MSB3247: Se encontraron conflictos entre diferentes versiones del mismo ensamblado dependiente. En Visual Studio, haga doble clic en esta advertencia (o selecciónela y presione Intro) para resolver los conflictos; de lo contrario, agregue las siguientes redirecciones de enlace al nodo "runtime" en el archivo de configuración de la aplicación: <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1"><dependentAssembly><assemblyIdentity name="Newtonsoft.Json" culture="neutral" publicKeyToken="30ad4fe6b2a6aeed" /><bindingRedirect oldVersion="0.0.0.0-6.0.0.0" newVersion="6.0.0.0" /></dependentAssembly></assemblyBinding>
+5>C:\Program Files (x86)\MSBuild\12.0\bin\Microsoft.Common.CurrentVersion.targets(1635,5): warning MSB3277: Se encontraron conflictos entre diferentes versiones del mismo ensamblado dependiente que no se pudieron resolver. Estos conflictos de referencia se enumeran en el registro de compilación si su nivel de detalle está establecido como detallado.
+5>  SitioNominaLocal -> E:\carlos\NtLinkNomina-V1.2_3.3\SitioNominaLocal\bin\SitioNominaLocal.dll
+========== Compilar: 5 correctos, 0 incorrectos, 3 actualizados, 0 omitidos ==========

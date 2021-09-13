@@ -1,0 +1,74 @@
+﻿/* Login
+----------------------------------------------------------*/
+
+body   
+{
+	font-size: 0.8em;
+     font: 15px Avenir;
+    margin: 0em;
+    padding: 0px;
+   height:100%;
+    width:100%; /* for ie 8 */
+     background-color: #ff0000;
+    background-image: url(../images/fondo_web.jpg) /* for ie 8 */;
+    background-repeat:repeat-y;
+    background-position: top;
+    background-attachment: inherit;
+    background: -moz-linear-gradient; /*for  FF 3.6+ */  
+    background: -ms-linear-gradient; /* IE10 */  
+    background: -webkit-gradient(linear, left top, left bottom,); /*for  Safari 4+, Chrome 2+ */  
+    background: -webkit-linear-gradient; /* Safari 5.1+, Chrome 10+ */  
+    background: -o-linear-gradient; /*for  Opera 11.10 */  
+    filter: progid:DXImageTransform.Microsoft.gradient; /*for  IE6 & IE7 */  
+   background: -ms-filter: "progid:DXImageTransform.Microsoft.gradient"; /* for IE8+ */  
+    background: linear-gradient; /* the standard */ 
+    
+  }
+.login 
+{
+    background-color: #000;
+    background-image:url(../images/logi.png);
+    background-repeat:repeat-y;
+    text-align: center;
+    margin:200em 300 0 -200em;
+    top: 100%;
+    left: 100%;
+    position: inherit;
+    width: 100%;
+    * height:auto rem;
+    *margin: -225em 0 0 -200em;
+     border-radius:  30px 30px 30px 30px ;
+  box-shadow:3px 4px 2px rgba(0, 0, 0, 0.9);
+      }
+.log
+{
+    Width:55%;
+     background-position:bottom;
+   border-radius:0 0 10px 10px;
+    border-color:Gray;
+   
+    
+    
+    }
+.logo {
+    text-align: center;
+     padding:0em;
+    height:100%;
+    width:100%;
+    
+}
+
+
+
+
+
+
+/*----------------------------------------------- fin login----------------------------------------------------------*/
+
+
+
+
+
+
+
+
